@@ -18,15 +18,15 @@ class Creator extends React.Component {
     visibleButtons: false,
   }
 
-  handleChange(event){
+  handleChange(event) {
     this.setState({
       value: event.target.value,
       visibleButtons: event.target.value.length > 0,
     });
   }
 
-  handleOK(){
-    if(this.state.value != ''){
+  handleOK() {
+    if (this.state.value != '') {
       this.props.action(this.state.value);
       this.setState({
         value: '',
@@ -35,7 +35,7 @@ class Creator extends React.Component {
     }
   }
 
-  handleCancel(){
+  handleCancel() {
     this.setState({
       value: '',
       visibleButtons: false,
