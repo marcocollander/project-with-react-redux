@@ -1,0 +1,10 @@
+@import '../../styles/settings.scss';
+
+.component {
+  position: relative;
+  background: $color-light;
+  border: 1px solid lighten($color-dark, 60%);
+  padding: $base-size;
+  margin: 0 0 $base-size 0;
+  border-radius: $radius;
+}

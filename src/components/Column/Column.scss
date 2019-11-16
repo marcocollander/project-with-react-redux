@@ -1,0 +1,38 @@
+@import '../../styles/settings.scss';
+
+.component {
+  flex-shrink: 0;
+  width: calc(33% - 12px);
+  background: $color-light;
+  margin: 0 $base-size $base-size 0;
+  padding: ($base-size * 1.5);
+  border-radius: $radius;
+  box-shadow: 0 ($base-size / 4) 0 rgba(0,0,0,0.3);
+  color: $color-dark;
+
+  &:last-child {
+    margin: 0 0 $base-size 0; 
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: ($base-size * 1.5);
+  margin: 0 0 ($base-size * 1.5) 0;
+}
+
+.icon > * {
+  padding-right: $base-size;
+  color: $color-warning;
+  font-size: ($base-size * 2);
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+
+  .component {
+    width: 100%;
+    margin: 0 0 $base-size 0;
+  }
+
+}
