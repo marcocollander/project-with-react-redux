@@ -1,2 +1,2 @@
 # project-with-react-redux
-###    https://git.heroku.com/project-with-react-redux.git
+###    https://ancient-basin-40697.herokuapp.com/
